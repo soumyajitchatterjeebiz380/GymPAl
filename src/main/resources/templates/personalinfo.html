@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Links</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #3ea1e3; /* Sunset color background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row; /* Align buttons horizontally */
+      justify-content: center; /* Center buttons horizontally */
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .btn {
+      font-size: 36px;
+      font-weight: bold;
+      padding: 30px 150px; /* Increase the button size */
+      margin: 10px;
+    }
+    .btn-red {
+      background-color: #ff0000; /* Bright red background for "Change Username" */
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-red:hover {
+      background-color: #cc0000; /* Darker red background on hover for "Change Username" */
+    }
+    .btn-blue {
+      background-color: #007bff; /* Blue background for "Change Password" */
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-blue:hover {
+      background-color: #0056b3; /* Darker blue background on hover for "Change Password" */
+    }
+    .btn-green {
+      background-color: #15ff00; /* Orange background for "Return To Home" */
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-green:hover {
+      background-color: #34c62d; /* Darker orange background on hover for "Return To Home" */
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a class="btn btn-red" href="https://www.google.com">Change Username</a>
+    <a class="btn btn-blue" href="https://www.google.com">Change Password</a>
+    <a class="btn btn-green" href="https://www.example.com">Return To Home</a>
+  </div>
+</body>
+</html>

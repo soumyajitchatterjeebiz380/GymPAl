@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Bio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts - Pacifico -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #3ea1e3; /* Cool blue background color */
+    }
+    .custom-form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .custom-form {
+      max-width: 600px; /* Wider form - adjust this value as needed */
+      padding: 20px;
+      background-color: #f1f7ff; /* Light blue background color for the form */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .custom-form .form-control {
+      background-color: #fff; /* White background color for the form fields */
+      border: 1px solid #ccc;
+    }
+    .custom-form .form-control:focus {
+      box-shadow: 0 0 0 2px #007bff; /* Blue border color on focus for form fields */
+    }
+    .custom-form .btn-primary {
+      background-color: #007bff; /* Blue background color for the "Update" button */
+      border-color: #007bff;
+    }
+    .custom-form .btn-primary:hover {
+      background-color: #0056b3; /* Darker blue background color on hover for the "Update" button */
+      border-color: #0056b3;
+    }
+    .custom-form h1 {
+      font-family: 'Pacifico', cursive; /* Use the Pacifico font for the title */
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid custom-form-container">
+    <div class="custom-form">
+      <form class="p-4">
+        <h1>Update Information</h1>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="last-name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last-name" name="last-name" required>
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="mb-3">
+          <label for="favorite-color" class="form-label">Favorite Color</label>
+          <input type="text" class="form-control" id="favorite-color" name="favorite-color" required>
+        </div>
+        <div class="mb-3">
+          <label for="available-time" class="form-label">Available Time</label>
+          <input type="datetime-local" class="form-control" id="available-time" name="available-time" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

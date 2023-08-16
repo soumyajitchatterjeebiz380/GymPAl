@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Custom styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #3ea1e3;
+        }
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+        }
+        .profile-info {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .info-item {
+            margin: 10px 0;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .update-btn {
+            padding: 10px 20px;
+            background-color: #ade422; /* Cool Blue color */
+            color: #ffffff; /* White text color for better visibility on a dark background */
+            border: none;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-primary text-white"> <!-- Set Bootstrap primary background color (cool blue) -->
+    <div class="container">
+        <img th:src="@{/images/lbj2.jpeg}" alt="Profile Picture" class="profile-image">
+
+        <div class="profile-info">
+            <div class="info-item">
+                <strong>First Name:</strong> Lebron
+            </div>
+            <div class="info-item">
+                <strong>Last Name:</strong> James
+            </div>
+            <div class="info-item">
+                <strong>Age:</strong> 38
+            </div>
+            <div class="info-item">
+                <strong>Favorite Color:</strong> Blue
+            </div>
+            <div class="info-item">
+                <strong>Available Time:</strong> Monday to Friday, 9:00 AM to 5:00 PM
+            </div>
+        </div>
+
+        <!-- Add the "Update Information" button -->
+        <a class="update-btn" href="/editbio">Edit Bio</a>
+        <a class="update-btn" href="/">Return Home</a>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
